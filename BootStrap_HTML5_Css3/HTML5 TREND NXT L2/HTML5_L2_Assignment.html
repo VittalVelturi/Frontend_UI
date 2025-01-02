@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <style> 
+	  .hold{
+		position: absolute;
+        height: 100px;
+        width: 100px;
+        }
+		body{
+		background-color: grey;
+		color: white;
+		font-family: 'Times New Roman', Times, serif;
+		}
+		#background{
+		padding-left:10px;
+		}
+        
+       </style>
+      <script>
+         function allowDrop(ev) {
+           ev.preventDefault();
+         }
+         
+         function drag(ev) {
+           ev.dataTransfer.setData("text", ev.target.id);
+         }
+         
+         function drop(ev) {
+           ev.preventDefault();
+           var data = ev.dataTransfer.getData("text");
+           ev.target.appendChild(document.getElementById(data));
+         
+         }
+      </script>
+   </head>
+   <body onload="getCoord()">
+      <div class="container-fluid">
+         <h1>
+            HTML 5 Drag and Drop, Geolocation, SVG, WebStorage and Elements
+         </h1>
+		 <h4>Drag and Drop the image in the SVG circles</h4>
+        <div class="row">
+            <div class="col-md-3" >
+               <div class="hold" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+               </div>
+               <svg  width="100" height="100" >
+                  <circle cx="50" cy="50" r="50" fill="yellow" />
+               </svg>
+            </div>
+            <div class="col-md-3" >
+               <div class="hold" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+               </div>
+               <svg  width="100" height="100" >
+                  <circle cx="50" cy="50" r="50" fill="green" />
+               </svg>
+            </div>
+		</div>
+            <img src="Smiley.gif" id="drag1"  draggable="true" ondragstart="drag(event)" height="100%">
+         <div class="row" id = "background">
+            <h4>
+            TO FIND CURRENT LOCATION, PLEASE PRESS THE BUTTON "Locate me"
+            </h4>
+            <div id = "console">
+               <button onclick="getLocation()" class="btn-success btn">Locate me</button>
+               <p id = "myloc">
+               </p>
+            </div>
+         </div>
+      </div>
+      <script>
+         var x = document.getElementById("myloc");
+         
+         function getLocation() {
+           if (navigator.geolocation) {
+             x.innerHTML = "<a style='color:yellow'>Locating you...</a>"
+             navigator.geolocation.getCurrentPosition(showPosition);
+           } else { 
+             x.innerHTML = "Geolocation is not supported by this browser.";
+           }
+         }
+         
+         function showPosition(position) {
+           x.innerHTML = "Latitude: " + position.coords.latitude + 
+           "<br>Longitude: " + position.coords.longitude + "<br><a style='color:chartreuse'>Saved to Web-Storage</a>"
+           localStorage.setItem("latitude", position.coords.latitude);
+           localStorage.setItem("longitude", position.coords.longitude)
+         }
+         function getCoord(){
+           x.innerHTML = "<a style='color:chartreuse'>Retrieved from Web-Storage</a>"+"<br>Latitude: " + localStorage.latitude + 
+           "<br>Longitude: " + localStorage.longitude 
+         }
+      </script>
+   </body>
+</html>

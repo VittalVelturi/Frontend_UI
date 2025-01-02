@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HTMLFULLSTACKASSIGNMENT2</title>
+<style>
+body{
+	background-image: url("Balloon.jpg");
+	height: 100%; 
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+table{
+width:50%;
+border:1px solid black;
+border-color:red;
+border-width:5px;
+border-style:solid;
+}
+td,tr{
+border-width:5px;
+border:1px solid black;
+border-style:solid;
+color: black;
+padding: 15px;
+}
+input[type=text], input[type=number], input[type=email] {
+  width: 50%;
+}
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+</style>
+</head>
+<body>
+<div>
+<h1 style="text-align:center"><img src="Xena.jpg" alt="Xena Exports"></h1>
+</div>
+<div>
+<h1 style="text-align:center">XENA EVENTS</h1>
+</div>
+<div>
+<h1 style="text-align:center">HOT AIR BALLOON RIDING-FEB 28TH 2017(5 DAYS ONLY)</h1>
+</div>
+<div>
+<table align="center">
+<form name="xenaform">
+<tr>
+<td><b>Name:</b></td><td><input type="text" name="name" pattern="[A-Za-z]+" required>(Only Alphabets allowed )</td>
+</tr>
+<tr>
+<td><b>Age:</b></td><td><input type="number" id="b" name="b" min="18" required></td>
+</tr>
+<tr>
+<td><b>Email ID:</b></td><td><input type="email" name="emailID" required></td>
+</tr>
+<tr>
+<td><b>City:</b></td><td><input list="Cities" name="City" required>
+  <datalist id="Cities" required>
+    <option value="Bangalore">
+    <option value="Rajkot">
+    <option value="Vizag">
+  </datalist></td>
+</tr>
+<tr>
+<td><input class="btn" type="submit" name="Submit" value="Submit"></td>
+<td style="border:0px solid black;"></td>
+</tr>
+</form>
+</table>
+</div>
+</body>
+</html>

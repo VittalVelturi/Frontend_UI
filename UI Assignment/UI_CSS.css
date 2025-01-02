@@ -1,0 +1,53 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif
+}
+.navbar{
+    background-color: darkcyan;
+}
+
+.navbar-light .navbar-brand{
+     color: white;
+}
+.navbar-light .navbar-nav .active>.nav-link{
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.one,.two,.three,.four{
+    padding: 15px;
+}
+.five{
+    color: white;
+}
+.colin{
+    margin: auto;
+}
+h3{
+    margin-bottom: 30px;
+}
+.pin{
+    margin-bottom: 60px;
+}
+.card{
+    border: none;
+}
+.fa-3x{
+    color: turquoise;
+}
+.btn{
+    background-color: white;
+}
+.card-text{
+    padding-bottom: 15px;
+}
+.ctitle{
+    color: turquoise;
+    font-size: 30pt;
+}
+.lp{
+    padding-bottom: 10px;
+}
+.fonts{
+    font-size: 7pt;
+}

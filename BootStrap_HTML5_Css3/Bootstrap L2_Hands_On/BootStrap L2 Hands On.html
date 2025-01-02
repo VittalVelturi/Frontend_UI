@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BootStrap L2_Hands On</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  body{
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+  }
+  a{
+    color: white;
+  }
+  h1,.card-title{
+    color: darkorange;
+  }
+  #Home{
+      margin:50px;
+      padding: 150px
+  }
+  #About,#Blog,#Contact,#Portfolio{
+      margin:50px;
+      padding: 105px 0px;
+  }
+  .heading{
+      text-align: center;
+      margin: 90px;
+  }
+  .card{
+      display: inline-block;
+  }
+  .button{
+      background-color: darkorange;
+      color: white;
+  }
+  .btn_home{
+      background-color: darkorange;
+      opacity: 0.8;
+      color: white
+  }
+  .col-md-6 .abt_head{
+      color: dodgerblue;
+      margin-top: 50px;
+  }
+  .adj{
+      border-left: 5px solid dodgerblue;
+  }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" offset="50">
+<!--Creation of Nav bar-->
+<nav class="navbar navbar-expand-sm bg-warning fixed-top">
+      <a class="nav-brand" href="#Home">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+    <i class='fa fa-bars'></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+      <a class="nav-link" href="#About">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#Portfolio">Portfolio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#Blog">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#Contact">Contact</a>
+    </li>
+  </ul>
+  </div>
+  </nav>
+<!--Creation of Home Tab-->
+<div  id="Home" class="container-fluid">
+    <div class="row">
+      <div class="col-md-11">
+          <div class="home">
+              <h1 class="display-4">YOUR HEALTH CLUB</h1>
+              <p style="font-size: 30px;">Ride to Fitness. Start your journey with us. Want to stay fit. Want get motivate. Understand the diet plan. Get in touch with your expert</p>
+              <span class="btn btn_home"><a href="https://www.cure.fit/" target="_blank">Click to Explore</a></span>
+          </div>
+      </div>
+    </div>
+</div>
+<!--Creation of About Tab-->
+<div id="About" class="container-fluid">
+  <div class="container">
+    <h1 style="text-align: center;">About Us</h1>
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+      <figure>
+        <img src="Fitness Expert.jpg" alt="Fitness Expert" width="60%"  class="rounded-circle mx-auto d-block"></img>
+        <figcaption style="text-align: center;">Fitness Expert</figcaption>
+      </figure>
+      </div>
+      <div class="col-xs-12 col-md-6 adj">
+          <h3 class="abt_head">Jinny</h3>
+          <p>Philosophy Fitness is here to be enjoyed. Fitness provides us with the ability to enjoy a healthy active lifestyle. The beauty is you get to choose your own fitness adventures- the options are endless.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Creation of Portfolio Tab-->
+<div id="Portfolio" class="container-fluid">
+    <h1 style="text-align: center;">Portfolio</h1>
+    <div class="row">
+        <div class="col-sm-6 col-md-3">
+            <div class="content">
+                <img class="rounded" src="Image1.jpg" alt="Image1" width="100%"></img>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="content">
+                <img class="rounded" src="Image2.jpg" alt="Image2" width="100%"></img>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="content">
+                <img class="rounded" src="Image3.jpg" alt="Image3" width="100%"></img>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="content">
+                <img class="rounded" src="Image4.jpg" alt="Image4" width="100%"></img>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-6 col-md-3">
+            <div class="content">
+                <img class="rounded" src="Image5.jpg" alt="Image5" width="100%"></img>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="content">
+                <img class="rounded" src="Image6.jpg" alt="Image6" width="100%"></img>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="content">
+                <img class="rounded" src="Image7.jpg" alt="Image7" width="100%"></img>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="content">
+                <img class="rounded" src="Image8.jpg" alt="Image8" width="100%"></img>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-6 col-md-3">
+            <div class="content">
+                <img class="rounded" src="Image9.jpg" alt="Image9" width="100%"></img>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="content">
+                <img class="rounded" src="Image10.jpg" alt="Image10" width="100%"></img>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="content">
+                <img class="rounded" src="Image11.jpg" alt="Image11" width="100%"></img>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="content">
+                <img class="rounded" src="Image12.jpg" alt="Image12" width="100%"></img>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-6 col-md-3">
+            <div class="content">
+                <img class="rounded" src="Image13.jpg" alt="Image13" width="100%"></img>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="content">
+                <img class="rounded" src="Image14.jpg" alt="Image14" width="100%"></img>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="content">
+                <img class="rounded" src="Image15.jpg" alt="Image15" width="100%"></img>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="content">
+                <img class="rounded" src="Image16.jpg" alt="Image16" width="100%"></img>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Creation of Blog Tab-->
+<div id="Blog" class="container-fluid">
+    <div class="container">
+        <h1 style="text-align: center;">Blog</h1>
+    <div class="row">
+        <div class="col-sm-12 col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="Blog1.jpg" alt="Blog1"></img>
+                <div class="card-body">
+                    <h4 class="card-title">Fitness and nutrition plan</h4>
+                    <p class="card-text">Do you want to lose weight, build muscle or feel more fit?.</p>
+                    <hr>
+                    <a class="text-primary" href="https://www.acefitness.org/education-and-resources/professional/expert-articles">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="Blog2.jpg" alt="Blog2"></img>
+                <div class="card-body">
+                    <h4 class="card-title">Fitness and nutrition plan</h4>
+                    <p class="card-text">Today I will do what other won't, so tomorrow I can accomplish what others can't.</p>
+                    <hr>
+                    <a class="text-primary" href="https://www.runtothefinish.com/">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="Blog3.jpg" alt="Blog3"></img>
+                <div class="card-body">
+                    <h4 class="card-title">Fitness and nutrition plan</h4>
+                    <p class="card-text">The difference between the impossible and the possible lies in a person's determination.</p>
+                    <hr>
+                    <a class="text-primary" href="http://fitnessontoast.com/">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<!--Creation of Contact tab-->
+<div id="Contact" class="container-fluid">
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <h1 class="heading">Contact Us</h1>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <form>
+            <div class="form-group">
+                <label class="sr-only" for="Name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="Email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="Description">About Yourself:</label>
+                <textarea class="form-control" rows="5" placeholder="About Yourself"></textarea>
+            </div>
+            <button class="button btn btn-block" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>

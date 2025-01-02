@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Topic14_Assignment1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  body{
+      font-family: 'Times New Roman', Times, serif;
+      margin: 10px;
+  }
+.container{
+    margin: 0px;
+    padding: 0px;
+}
+  </style>
+</head>
+<body>
+    <div class="container">
+      <canvas id="rotaterect" width="300px" height="130px" style="border: 1px solid grey"></canvas>
+        <script>
+        var canvas=document.getElementById("rotaterect");
+        var ctx=canvas.getContext("2d");
+        ctx.fillStyle="yellow";
+        ctx.fillRect(0, 0, 250, 90); 
+        ctx.fillStyle="red";
+         ctx.rotate(24*Math.PI/180);
+        ctx.fillRect(20, 0, 270, 150);
+        ctx.fillStyle="blue";
+         ctx.rotate(24*Math.PI/180);
+        ctx.fillRect(40, 0, 270, 150);
+        </script>
+    </div>
+</body>
+</html>

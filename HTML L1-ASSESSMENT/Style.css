@@ -1,0 +1,33 @@
+body{
+width:100%;
+height:100%;
+margin:0px;
+padding:0px;
+background-image: url("http://hdblackwallpaper.com/wallpaper/2015/04/1200-x-900-solid-black-wallpaper-35-background-wallpaper.jpg");
+background-repeat: no-repeat;
+background-size: 1536px 877px;
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(205px, 1fr));
+	width:1536px;
+	margin: 0 auto;
+	
+}
+
+.grid a{
+	margin: 2px;
+	border: 4px solid transparent;
+	display: inline-block;
+	border-radius: 10px;
+}
+
+.grid a:hover {
+	border-color: red;
+}
+
+.grid img{
+	border-radius: 10px;
+	width:205px;
+}

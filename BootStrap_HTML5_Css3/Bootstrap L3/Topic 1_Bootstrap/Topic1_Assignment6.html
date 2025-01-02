@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Topic1_Assignment6</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style> 
+body{
+ padding-left: 10px;
+ font-family: 'Times New Roman', Times, serif;
+}
+#content{
+  box-sizing: content-box;  
+  width: 300px;
+  height: 100px;
+  padding: 30px;  
+  border: 2px solid green;
+}
+
+#box{
+  box-sizing: border-box;
+  width: 300px;
+  height: 100px;
+  padding: 30px;  
+  border: 2px solid green;
+}
+p{
+font-size:18px;
+}
+h3{
+text-decoration:underline;
+color:red;
+</style>
+</head>
+<body>
+
+<h3>Box-sizing Property</h3>
+<p><u><b>Definition:</b></u> Defines how the width and height of an element are calculated: should they include padding and borders, or not.</p>
+
+<h3>box-sizing: content-box (default):</h3>
+<p>The width and height properties (and min/max properties) includes only the content. Border and padding are not included</p>
+<div id="content">This div has a width of 300px.<br>Actual Width=Width+Border(L&R)+Padding(L&R)<br>Actual Width=300+4+60=364px</div>
+
+<h3>box-sizing: border-box:</h3>
+<p>The width and height properties (and min/max properties) includes content, padding and border</p>
+<div id="box">Here, the full width is 300px, no matter what!</div>
+
+</body>
+</html>

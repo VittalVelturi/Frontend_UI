@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Topic 7</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+      .container{
+          font-family: 'Times New Roman', Times, serif;
+          margin: 10px;
+      }
+  </style>
+</head>
+<body>
+    <div class="container">
+    <p> To know the Encrption of string message "https://getbootstrap.com/docs/4.1/content/images/" click the below Button.</p>
+    <p id="demo"></p>
+    <button class="btn btn-info" onclick="myFunction()">Encode</button>
+</div>
+        <script>
+            function myFunction() {
+              var uri = "https://getbootstrap.com/docs/4.1/content/images/";
+              var res = "Encoded URI: "+encodeURIComponent(uri);
+              document.getElementById("demo").innerHTML = res;
+            }
+        </script>        
+</body>
+</html>

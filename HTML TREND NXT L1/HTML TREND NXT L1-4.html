@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTMLFULLSTACKASSIGNMENT5</title>
+  <style>
+  body{
+  background-image: url("Cricket Stadium.jpg");
+  height: 100%; 
+  width: 100%
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top:0;
+  }
+  .title{
+  font-family: "Times New Roman", "times", "serif";
+  text-align: center;
+  }
+  #myCanvas{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 800px;
+  }
+  </style>
+</head>
+<body>
+<div class="title">
+	<h2><u> BCCI (Board of Control for Cricket in India) </u></h2>
+	<h4> Line chart for the batting statistics of the Indian team for a T20 cricket match </h4>
+</div>
+<canvas id="myCanvas" width="750" height="420" style="border:5px solid black; border-color: blue;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font= "20px Times"
+ctx.strokeStyle = "red";
+<!-- X and Y Coordinates Lines-->
+ctx.moveTo(70,10);
+ctx.lineTo(70,390);
+ctx.stroke();
+ctx.moveTo(10,360);
+ctx.lineTo(720,360);
+ctx.stroke();
+<!-- X Coordinates Names-->
+ctx.strokeText("5", 170,380);
+ctx.strokeText("10", 270,380);
+ctx.strokeText("15", 370,380);
+ctx.strokeText("20", 470,380);
+ctx.strokeText("25", 570,380);
+ctx.moveTo(370,400);
+ctx.lineTo(590,400);
+ctx.stroke();
+ctx.strokeText(">", 583,407);
+ctx.strokeText("OVERS", 600,405);
+<!-- Y Coordinates Names-->
+ctx.strokeText("40-", 40,320);
+ctx.strokeText("80-", 40,280);
+ctx.strokeText("120-", 30,240);
+ctx.strokeText("160-", 30,200);
+ctx.strokeText("200-", 30,160);
+ctx.strokeText("240-", 30,120);
+ctx.moveTo(10,60);
+ctx.lineTo(10,280);
+ctx.stroke();
+ctx.strokeText("^", 6,70);
+ctx.strokeText("RUNS", 10,40);
+<!-- GRAPH LINE CHART STATS>
+ctx.moveTo(170,320);
+ctx.lineTo(270,285);
+ctx.stroke();
+ctx.moveTo(270,285);
+ctx.lineTo(370,220);
+ctx.stroke();
+</script> 
+</body>
+</html>

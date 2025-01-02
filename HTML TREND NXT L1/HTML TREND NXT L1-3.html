@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HTMLFULLSTACKASSIGNMENT3</title>
+<style>
+#btn1{
+background-color:red;
+}
+#btn2{
+background-color:green;
+}
+#btn3{
+background-color:blue;
+}
+p{
+text-align:right;
+}
+h2{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 250px;
+  }
+video{
+	padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+img{
+	padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#s1,#s2{
+border-radius:5px;
+}
+#s2 #Play/Pause{
+	padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#Play/Pause{
+text-align:Center;
+}
+
+</style>
+</head>
+<body>
+<script>
+function button1(){
+document.getElementById("s1").style.backgroundColor = "red";
+}
+function button2(){
+document.getElementById("s1").style.backgroundColor = "green";
+}
+function button3(){
+document.getElementById("s1").style.backgroundColor = "blue";
+}
+function button4(){
+document.getElementById("s2").style.backgroundColor = "red";
+}
+function button5(){
+document.getElementById("s2").style.backgroundColor = "green";
+}
+function button6(){
+document.getElementById("s2").style.backgroundColor = "blue";
+}
+function playvid(){
+var vid= document.getElementById("Video");
+vid.play();
+}
+function pausevid(){
+var vid= document.getElementById("Video");
+vid.pause();
+}
+</script>
+<div id="s1">
+		<p> Background Color:
+		<input id="btn1" type="button" value="R" onclick="button1();">
+		<input id="btn2" type="button" value="G" onclick="button2();">
+		<input id="btn3" type="button" value="B" onclick="button3();">
+		</p>
+		<img src="Video Icon.jpg" alt="LOGO">
+		<h2><u>Awesome Online Videos</u></h2>
+	<br>
+</div>
+<br>
+<div id="s2">
+		<p> Background Color:
+		<input id="btn1" type="button" value="R" onclick="button4();">
+		<input id="btn2" type="button" value="G" onclick="button5();">
+		<input id="btn3" type="button" value="B" onclick="button6();">
+		</p>
+		<video id="Video" width="720" height="340" >
+			<source src="Technology.mp4" type="video/mp4">
+			<source src="Technology.ogg" type="video/ogg">
+		</video>
+		<div style="text-align:center">
+		<input type="button" value="Play" onclick="playvid();"> &nbsp <input type="button" value="Pause" onclick="pausevid();">
+		</div>
+	<br>
+</div>
+</body>
+</html>

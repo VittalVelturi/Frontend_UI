@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FS ASSIGNMENT4-Local</title>
+<style>
+div .container{
+text-align: left;
+font-family: "Times New Roman", "serif";
+border:5px groove black;
+border-collapse: collapse;
+}
+.heading{
+color:red;
+}
+
+</style>
+</head>
+<body onload="getdata();">
+<script>
+function setdata(){
+localStorage.setItem("username","Indian Air force")
+localStorage.setItem("Jet","Sukohi");
+localStorage.setItem("Genearation","4++");
+localStorage.setItem("Role","Mutlirole Aircraft");
+localStorage.setItem("Missile","Brahmos");
+}
+function getdata(){
+var res=localStorage.username+" has a "+localStorage.Genearation+" generation "+localStorage.Role+" named as "+localStorage.Jet+" which can carry a precised cruise missile called "+localStorage.Missile; 
+document.getElementById("len").value=localStorage.length;
+document.getElementById("des").innerHTML= res;
+}
+function removedata(){
+localStorage.clear();
+}
+</script>
+<div>
+<div class="container">
+<h1 align="middle"><u><i>Local Storage</i></u></h1>
+<p class="heading"><b><u>DESCRIPTION</u>:</b></p><i> Kindly follow the below steps:</i>
+<p>1.Click on Set Button<br>
+2.Click on the Retrive Button</p>
+<p class="heading"><b><u>NOTES</u>:</b></p>
+1.Press "F12" to see the Local storage elements in <a href="">Path:Storage->Local Storage.</a><br>
+2.You can see the text displayed with all the local stored values and the length of Local storage elements.<br>
+3.Copy the Url and try pasting in an another tab to know the functionality.<br>
+
+<p class="heading"><b><u>PROCEDURE</u>:</b></p>
+<p> Click on Set Button to store the local storage key values </p>
+<input type="submit" name="Set" value="Set" onclick="setdata();"/>
+<p> Click on Retrive to get the local stored valued </p>
+<input type="submit" name="Retrive" value="Retrive" onclick="getdata();"/>
+<p>Length of local Storage: <input type="text" id="len"></p>
+<h2 id="des"></h2>
+<p> Click on Remove to remove all the local stored elements</p>
+<input type="submit" name="Clear" value="Clear" onclick="removedata();"/>
+<br>
+</div>
+</div>
+</body>
+</html>

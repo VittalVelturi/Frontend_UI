@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FS ASSIGNMENT4-session</title>
+<style>
+div .container{
+text-align: left;
+font-family: "Times New Roman", "serif";
+border:5px groove black;
+border-collapse: collapse;
+}
+.heading{
+color:red;
+}
+
+</style>
+</head>
+<body onload="getdata();">
+<script>
+function setdata(){
+sessionStorage.setItem("username","Indian Air force")
+sessionStorage.setItem("Jet","Sukohi");
+sessionStorage.setItem("Genearation","4++");
+sessionStorage.setItem("Role","Mutlirole Aircraft");
+sessionStorage.setItem("Missile","Brahmos");
+}
+function getdata(){
+var res=sessionStorage.username+" has a "+sessionStorage.Genearation+" generation "+sessionStorage.Role+" named as "+sessionStorage.Jet+" which can carry a precised cruise missile called "+sessionStorage.Missile; 
+document.getElementById("len").value=sessionStorage.length;
+document.getElementById("des").innerHTML= res;
+}
+function removedata(){
+sessionStorage.clear();
+}
+</script>
+<div>
+<div class="container">
+<h1 align="middle"><u><i>Session Storage</i></u></h1>
+<p class="heading"><b><u>DESCRIPTION</u>:</b></p><i> Kindly follow the below steps:</i>
+<p>1.Click on Set Button<br>
+2.Click on the Retrive Button</p>
+<p class="heading"><b><u>NOTES</u>:</b></p>
+1.Press "F12" to see the session storage elements in <a href="">Path:Storage->session Storage.</a><br>
+2.You can see the text displayed with all the session stored values and the length of session storage elements.<br>
+3.Copy the Url and try pasting in an another tab to know the functionality.You can observed the length of session storage and the changes in the sentences as "undefined"<br>
+
+<p class="heading"><b><u>PROCEDURE</u>:</b></p>
+<p> Click on Set Button to store the session storage key values </p>
+<input type="submit" name="Set" value="Set" onclick="setdata();"/>
+<p> Click on Retrive to get the session stored valued </p>
+<input type="submit" name="Retrive" value="Retrive" onclick="getdata();"/>
+<p>Length of Session Storage: <input type="text" id="len"></p>
+<h2 id="des"></h2>
+<p> Click on Remove to remove all the session stored elements</p>
+<input type="submit" name="Clear" value="Clear" onclick="removedata();"/>
+<br>
+</div>
+</div>
+</body>
+</html>
